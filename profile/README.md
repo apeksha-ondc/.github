@@ -47,6 +47,7 @@ To enroll in the ONDC network, Network Participants (NP) must be added to the re
 
    After presenting a demo and receiving approval from the relevant team, follow the [outlined process](https://github.com/ONDC-Official/developer-docs/blob/main/registry/Onboarding%20of%20Participants.md) to be added to the Pre-Prod registry. 
 3. **Production Registry**
+ 
    Upon successfully completing functional testing and satisfying the final checklist in Pre-Production, an NP can transition to the the Production environment.
 
 ### Signing and Verification
@@ -54,6 +55,8 @@ To enroll in the ONDC network, Network Participants (NP) must be added to the re
 When communicating over HTTP using Beckn APIs, the subscribers need to authenticate themselves to perform transactions with other subscribers. Due to the commercial nature of the transactions, every request/callback pair is considered to be a "contract" between two parties. Therefore, it is imperative that all requests and callbacks are digitally signed by the sender and subsequently verified by the receiver.
 
 The complete process is documented [here](https://github.com/ONDC-Official/developer-docs/blob/main/registry/signing-verification.md)
+
+Some frequently asked questions and answers are compiled [here](https://docs.google.com/document/d/15Dpy02lqtcU9tslyMqaI4UtnD2rtwnjAbn1narO0364/edit?usp=sharing).
 
 ### Enabled Domains
 
