@@ -72,6 +72,8 @@ Below are links to the comprehensive developer guide and model implementations f
 
     - [v1.2](https://docs.google.com/document/d/1brvcltG_DagZ3kGr1ZZQk4hG4tze3zvcxmGV4NMTzr8/edit)
     - [Test Case Scenarios - B2C](https://docs.google.com/spreadsheets/d/1JZV6ZQzXcHUsOwegGtArX3DdIXYIy3gxkhQ00q7kICc/edit#gid=1367601795)
+    - [Manual Logs Checklist](https://docs.google.com/document/d/1ROAGXqj5cJkgsNWvg_xiufglhqEQDJFBgQSPcFZMZd4/edit) - Also review these checks before submitting your logs for ONDC review
+    - [Commonly asked questions](https://docs.google.com/document/d/1Zb2XzrAUGGdthFqV5tRWxIzQf8XjaW22ev_lqfr3PbI/edit#heading=h.iz6kq888kevy) <sub>_(Not found the question you were looking for? Leave a comment in the document & we will revert)_</sub>
   - B2B
 
     - [v2.0.2](https://github.com/ONDC-Official/ONDC-RET-Specifications/tree/release-2.0.2)
@@ -89,6 +91,7 @@ Below are links to the comprehensive developer guide and model implementations f
   - [Logistics Developer Guide](https://ondc-official.github.io/ONDC-LOG-Specifications/)
        - `For B2B Logistics, select version : draft-2.x`
   - [Test Case Scenarios - B2C Logistics](https://docs.google.com/spreadsheets/d/1JZV6ZQzXcHUsOwegGtArX3DdIXYIy3gxkhQ00q7kICc/edit#gid=1670900093)
+  - [Commonly asked questions](https://docs.google.com/document/d/17gCkt9gpnm8jA71gwEwtPPnvBo6szGeFyruvOaueL3c/edit) <sub>_(Not found the question you were looking for? Leave a comment in the document & we will revert)_</sub>
 - Financial Services - This domain facilitates easy access to a spectrum of financial solutions, covering loans, insurance, investments. 
 
   - [Financial Services Developer Guide](https://ondc-official.github.io/ONDC-FIS-Specifications/)
@@ -99,6 +102,7 @@ Below are links to the comprehensive developer guide and model implementations f
        - `For Motor Insurance , select version : draft-motor`
        - `For Marine Insurance , select version : draft-marine`
        - `For Investments , select version : draft-FIS14-enhancements`
+   - [Commonly asked questions](https://docs.google.com/document/d/1JH9zAK5S3po6GRv6BCdOddxYN6AzjgO57YQE8pVn6lQ/edit) <sub>_(Not found the question you were looking for? Leave a comment in the document & we will revert)_</sub>
 
   - [Gift Card](https://docs.google.com/document/d/1iTCQd_jI3mRqgSiaeZBvxWL-G_wkE__xxW-Wua8arVE/edit)
 
@@ -111,7 +115,7 @@ Below are links to the comprehensive developer guide and model implementations f
       - `For Airlines Booking, select version : draft-TRV12-airline`
       - `For Hotel Booking, select version : draft-TRV13-hotel`
       - `For Unreserved Entry Pass (heritage sights, museums, concerts, etc), select version : draft-TRV14-2.0.0`
-
+   - [Commonly asked questions](https://docs.google.com/document/d/138tJ_zzt5yIi46b3WsY2UeBU1rJeGXZTG4ivheT87CM/edit) <sub>_(Not found the question you were looking for? Leave a comment in the document & we will revert)_</sub>
 
 - Services -  This domain empowers individuals to effortlessly access a diverse array of services, covering skilled services like home painting, chefs and consulations, auction of agricultural outputs, leasing farming machinery and tools, soil testing, assaying services, lab testing, subscriptions, etc.
 
@@ -124,13 +128,16 @@ Below are links to the comprehensive developer guide and model implementations f
       - `For Soil Testing and Assaying Service, select version : draft-agri_services`
       - `For Healthcare Services (Lab Test Booking), select version : draft-healthcare`
       - `For Subcription based services, select version : draft-subscriptions`
+   - [Commonly asked questions](https://docs.google.com/document/d/1e_nGOnYb4ld1kxjhOHOsXXOms96aDd6txD8Wh2wl6tk/edit) <sub>_(Not found the question you were looking for? Leave a comment in the document & we will revert)_</sub>
 
 - Ancillary Services
 
   - Issue & Grievance Management (IGM) within the ONDC Network serves as a critical mechanism for resolving disputes and concerns among Network Participants (NPs).
     - [v1.0.0](https://docs.google.com/document/d/1ZUS5hvS2M-TafyjAdcTY6X51VKbb9IO1fPaSquQfA0Y/edit)
+    - [Commonly asked questions](https://docs.google.com/document/d/1-NULesI1Z6GQ9y4Z0loGEG5yfunX5u9woON-qxYH6w0/edit) 
   - Reconcillation and Settlement Framework (RSF) plays a pivotal role in maintaining a comprehensive trail of settlements between Network Participants.
     - [v1.0.0](https://docs.google.com/document/d/1ubUPAWpbbUJ4vG2h5TQ74srZBjYjrO0P/edit)
+    - [Commonly asked questions](https://docs.google.com/document/d/19TCvuwwvOklt9Ev-SKkcXRAdvh6Qyhl9tI1Z_YavHMk/edit) 
   - Rating 
     - [v1.2.0](https://docs.google.com/document/d/1VaafY8t47hjpoW6tdezGsPwLwxxaAaGc/edit)
   - Score
