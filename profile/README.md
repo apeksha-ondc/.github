@@ -76,7 +76,7 @@ _Below are links to the **comprehensive developer guide and model implementation
 
 |**Domain**|**API Contract/ Developer Guide**|**Test Scenarios**|**Log Utility**|**Mock Server/ Sandbox/ Reference Application**|**FAQs**|
 |---------------------|---------------------------------|------------------|------------------------|----------|------|
-|**B2C Retail**|[API Contract v1.2.0](https://docs.google.com/document/d/1brvcltG_DagZ3kGr1ZZQk4hG4tze3zvcxmGV4NMTzr8/edit) <br/><br/> [Retail Developer Guide](https://ondc-official.github.io/ONDC-RET-Specifications/) - `select version: draft-1.x`|[B2C Test Scenarios](https://docs.google.com/spreadsheets/d/1JZV6ZQzXcHUsOwegGtArX3DdIXYIy3gxkhQ00q7kICc/edit#gid=1367601795)|[Log Validation Utility](https://github.com/ONDC-Official/log-validation-utility) <br/><br/> [Manual Logs Checklist](https://docs.google.com/document/d/1ROAGXqj5cJkgsNWvg_xiufglhqEQDJFBgQSPcFZMZd4/edit)|Reference Buyer Application (Pre-Prod) <br/><br/> Reference Seller App (Pre-Prod)|[FAQ Link](https://docs.google.com/document/d/1Zb2XzrAUGGdthFqV5tRWxIzQf8XjaW22ev_lqfr3PbI/edit#heading=h.iz6kq888kevy)|
+|**B2C Retail**|[API Contract v1.2.0](https://docs.google.com/document/d/1brvcltG_DagZ3kGr1ZZQk4hG4tze3zvcxmGV4NMTzr8/edit) <br/><br/> [Retail Developer Guide](https://ondc-official.github.io/ONDC-RET-Specifications/) - `select version: draft-1.x`|[B2C Test Scenarios](https://docs.google.com/spreadsheets/d/1JZV6ZQzXcHUsOwegGtArX3DdIXYIy3gxkhQ00q7kICc/edit#gid=1367601795)|[Log Validation Utility](https://github.com/ONDC-Official/log-validation-utility) <br/><br/> [Manual Logs Checklist](https://docs.google.com/document/d/1ROAGXqj5cJkgsNWvg_xiufglhqEQDJFBgQSPcFZMZd4/edit)|Reference Buyer Application (Pre-Prod) <br/><br/> Reference Seller App (Pre-Prod)|[B2C Retail FAQs](https://docs.google.com/document/d/1Zb2XzrAUGGdthFqV5tRWxIzQf8XjaW22ev_lqfr3PbI/edit#heading=h.iz6kq888kevy)|
 |**B2C Exports**|[Retail Developer Guide](https://ondc-official.github.io/ONDC-RET-Specifications/) - `select version: b2c_exports_2.0`|NA|NA|[Sandbox](https://mock.ondc.org/)|NA|
 
    - #### B2B
@@ -134,21 +134,19 @@ _Below are links to the **comprehensive developer guide and model implementation
 - Media, Entertainment, Content
   - [v2.0.0](https://github.com/ONDC-Official/ONDC-MEC-Specifications/tree/draft-print_media)
   - [Media, Entertainment, Content Developer Guide](https://ondc-official.github.io/ONDC-MEC-Specifications/)
-- Ancillary Services
 
-  - **Issue & Grievance Management (IGM)** within the ONDC Network serves as a critical mechanism for resolving disputes and concerns among Network Participants (NPs).
-    - [v1.0.0](https://docs.google.com/document/d/1ZUS5hvS2M-TafyjAdcTY6X51VKbb9IO1fPaSquQfA0Y/edit)
-       - <code>**TIP:** Run the transaction logs through the [log validation utility](https://github.com/ONDC-Official/log-validation-utility) to ensure accuracy before submission to the ONDC team for technical clearance.</code>
-    - [Commonly asked questions](https://docs.google.com/document/d/1-NULesI1Z6GQ9y4Z0loGEG5yfunX5u9woON-qxYH6w0/edit) 
-  - **Reconcillation and Settlement Framework (RSF)** plays a pivotal role in maintaining a comprehensive trail of settlements between Network Participants.
-    - [v1.0.0](https://docs.google.com/document/d/1ubUPAWpbbUJ4vG2h5TQ74srZBjYjrO0P/edit)
-       - <code>**TIP:** Use the [RSF Mock Server](https://github.com/ONDC-Official/mock-server-utility) to test network integration for RSF</code>
-    - [Commonly asked questions](https://docs.google.com/document/d/19TCvuwwvOklt9Ev-SKkcXRAdvh6Qyhl9tI1Z_YavHMk/edit) 
-  - Rating 
-    - [v1.2.0](https://docs.google.com/document/d/1VaafY8t47hjpoW6tdezGsPwLwxxaAaGc/edit)
-  - Score
-    - [v1.2.0](https://docs.google.com/document/d/126O1wFdA-IuwojiAuLzdpN36vjWfQg9KOA2zRd9-zTY/edit#heading=h.bifjra7hj5b0)
-  - [Test Case Scenarios (IGM &amp; RSF)](https://docs.google.com/document/d/1tx86sypacIRXgL9nlNBdvHz7cYQjQoyC/edit)
+- Ancillary Services
+  - **Issue & Grievance Management (IGM)** within the ONDC Network serves as a critical mechanism for **resolving disputes and concerns** among Network Participants (NPs).
+  - **Reconcillation and Settlement Framework (RSF)** plays a pivotal role in maintaining a comprehensive **trail of settlements** between Network Participants.
+  - **Rating**
+  - **Score**
+    
+|**Domain**|**API Contract/ Developer Guide**|**Test Scenarios**|**Log Utility/ Sandbox**|**Mock Server/ Reference Application**|**FAQs**|
+|---------------------|---------------------------------|------------------|------------------------|----------|------|
+|**IGM**|[v1.0.0](https://docs.google.com/document/d/1ZUS5hvS2M-TafyjAdcTY6X51VKbb9IO1fPaSquQfA0Y/edit)|[Test Case Scenarios (IGM)](https://docs.google.com/document/d/1tx86sypacIRXgL9nlNBdvHz7cYQjQoyC/edit)|[Log validation utility](https://github.com/ONDC-Official/log-validation-utility)|NA|[IGM FAQs](https://docs.google.com/document/d/1-NULesI1Z6GQ9y4Z0loGEG5yfunX5u9woON-qxYH6w0/edit)|
+|**RSF**|[v1.0.0](https://docs.google.com/document/d/1ubUPAWpbbUJ4vG2h5TQ74srZBjYjrO0P/edit)|[Test Case Scenarios (RSF)](https://docs.google.com/document/d/1tx86sypacIRXgL9nlNBdvHz7cYQjQoyC/edit)|NA|[RSF Mock Server](https://github.com/ONDC-Official/mock-server-utility)|[RSF FAQs](https://docs.google.com/document/d/19TCvuwwvOklt9Ev-SKkcXRAdvh6Qyhl9tI1Z_YavHMk/edit)|
+|**Rating**|[v1.2.0](https://docs.google.com/document/d/1VaafY8t47hjpoW6tdezGsPwLwxxaAaGc/edit)|NA|NA|NA|NA|
+|**Score**|[v1.2.0](https://docs.google.com/document/d/126O1wFdA-IuwojiAuLzdpN36vjWfQg9KOA2zRd9-zTY/edit#heading=h.bifjra7hj5b0)|NA|NA|NA|NA|
 
 ## Reference Applications
 
