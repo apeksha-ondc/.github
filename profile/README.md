@@ -176,7 +176,7 @@ The network participants need to complete the end-to-end testing with ONDC refer
 
 ## Utilities and Sandboxes
 
-- Signing and Verification : This tool is designed to support and aid ONDC Network Participants in constructing their own cryptocurrency libraries essential for engaging with the ONDC Network. It encompasses tasks such as key generation, signing, verification, encryption, and decryption.
+- Signing and Verification : This tool is designed to support and aid ONDC Network Participants in constructing their own crypto libraries essential for engaging with the ONDC Network. It encompasses tasks such as key generation, signing, verification, encryption, and decryption.
   - [Java](https://github.com/ONDC-Official/reference-implementations/tree/main/utilities/ondc-crypto-utility-master)
   - [NodeJS](https://github.com/ONDC-Official/reference-implementations/tree/main/utilities/ondc-crypto-sdk-nodejs)
   - [Python](https://github.com/ONDC-Official/reference-implementations/tree/main/utilities/signing_and_verification)
@@ -209,8 +209,8 @@ The network participants need to complete the end-to-end testing with ONDC refer
 |                      | Registry    | `https://preprod.registry.ondc.org/ondc/lookup`         |
 |                      |                     | `https://preprod.registry.ondc.org/ondc/vlookup`            |
 | **Production**       | Gateway     | `https://prod.gateway.ondc.org/search`                    |
-|                      | Registry    | `https://prod.registry.ondc.org/ondc/lookup`              |
-|                      |                     | `https://prod.registry.ondc.org/ondc/vlookup`              |
+|                      | Registry    | `https://prod.registry.ondc.org/lookup`              |
+|                      |                     | `https://prod.registry.ondc.org/vlookup`              |
 
 ## Network Observability for Production
 Refer to the following document for the Network Observability API Schema Requirements for the Production Environment.
