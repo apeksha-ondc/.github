@@ -65,28 +65,26 @@ The complete process is documented [here](https://github.com/ONDC-Official/devel
 
 ### Enabled Domains
 
-Network Participants are requested to refer to the list [here](https://docs.google.com/spreadsheets/d/10yM4DtZ5cOgRf0uT2KMN6Ucd9IU_YZ__JatYYXtjc1k/edit#gid=1951317229) for ONDC defined domains and respective codes, across all environments (Staging, Pre-production and Production). The list will be updated as in when required.
+Network Participants are requested to refer to the list **[here](https://docs.google.com/spreadsheets/d/10yM4DtZ5cOgRf0uT2KMN6Ucd9IU_YZ__JatYYXtjc1k/edit#gid=1951317229)** for ONDC defined domains and respective codes, across all environments (Staging, Pre-production and Production). The list will be updated as in when required.
 
-Below are links to the comprehensive developer guide and model implementations for the enabled domains.
+_Below are links to the **comprehensive developer guide and model implementations** for the enabled domains._
 
-- Retail - This domain encompasses subcategories such as grocery, food and beverages, fashion, electronics, home & decor, beauty, and personal care, etc. It facilitates seamless transactions in both B2C and B2B modes, offering a comprehensive shopping experience for consumers and businesses alike.
+- ### Retail (RET)
+  This domain encompasses subcategories such as **grocery (RET10), food and beverages (RET11), fashion (RET12), electronics (RET14), home & decor (RET15), beauty and personal care (RET13)**, etc. It facilitates seamless transactions in both **B2C** and **B2B** modes, offering a comprehensive shopping experience for consumers and businesses alike.
 
-  - B2C
+- #### B2C
 
-    - [v1.2](https://docs.google.com/document/d/1brvcltG_DagZ3kGr1ZZQk4hG4tze3zvcxmGV4NMTzr8/edit)
-    - [Test Case Scenarios - B2C](https://docs.google.com/spreadsheets/d/1JZV6ZQzXcHUsOwegGtArX3DdIXYIy3gxkhQ00q7kICc/edit#gid=1367601795)
-       - <code>Run the transaction logs for these scenarios through the [log validation utility](https://github.com/ONDC-Official/log-validation-utility) to ensure accuracy before submission to the ONDC team for technical clearance.</code>
-    - [Manual Logs Checklist](https://docs.google.com/document/d/1ROAGXqj5cJkgsNWvg_xiufglhqEQDJFBgQSPcFZMZd4/edit) - _Also review these checks before submitting your logs for ONDC review_
-    - [Commonly asked questions](https://docs.google.com/document/d/1Zb2XzrAUGGdthFqV5tRWxIzQf8XjaW22ev_lqfr3PbI/edit#heading=h.iz6kq888kevy) <sub>_(Not found the question you were looking for? Leave a comment in the document & we will revert)_</sub>
-  - B2B
+|**Domain**|**API Contract/ Developer Guide**|**Test Scenarios**|**Log Utility/ Sandbox**|**Mock Server/ Sandbox/ Reference Application**|**FAQs**|
+|---------------------|---------------------------------|------------------|------------------------|----------|------|
+|**B2C Retail**|[API Contract v1.2.0](https://docs.google.com/document/d/1brvcltG_DagZ3kGr1ZZQk4hG4tze3zvcxmGV4NMTzr8/edit) <br/><br/> [Retail Developer Guide](https://ondc-official.github.io/ONDC-RET-Specifications/) - `select version: draft-1.x`|[B2C Test Scenarios](https://docs.google.com/spreadsheets/d/1JZV6ZQzXcHUsOwegGtArX3DdIXYIy3gxkhQ00q7kICc/edit#gid=1367601795)|[Log Validation Utility](https://github.com/ONDC-Official/log-validation-utility) <br/><br/> [Manual Logs Checklist](https://docs.google.com/document/d/1ROAGXqj5cJkgsNWvg_xiufglhqEQDJFBgQSPcFZMZd4/edit)|Reference Buyer Application (Pre-Prod) <br/><br/> Reference Seller App (Pre-Prod)|[FAQ Link](https://docs.google.com/document/d/1Zb2XzrAUGGdthFqV5tRWxIzQf8XjaW22ev_lqfr3PbI/edit#heading=h.iz6kq888kevy)|
+|**B2C Exports**|[Retail Developer Guide](https://ondc-official.github.io/ONDC-RET-Specifications/) - `select version: b2c_exports_2.0`|NA|NA|[Sandbox](https://mock.ondc.org/)|NA|
 
-    - [v2.0.2](https://github.com/ONDC-Official/ONDC-RET-Specifications/tree/release-2.0.2)
-    - [Test Case Scenarios - B2B](https://docs.google.com/document/d/10ouiTKLY4dm1KnXCuhFwK38cYd9_aDQ30bklkqnPRkM/edit)
-  - [Retail Developer Guide](https://ondc-official.github.io/ONDC-RET-Specifications/)
+   - #### B2B
 
-     - `For B2B, select version : release-2.0.2`
-     - `For B2C, select version : draft-1.x`
-     - `For B2C Exports, select version : b2c_exports_2.0`
+|**Domain**|**API Contract/ Developer Guide**|**Test Scenarios**|**Log Utility/ Sandbox**|**Mock Server/ Reference Application**|**FAQs**|
+|---------------------|---------------------------------|------------------|------------------------|----------|------|
+|**B2B Retail**|[API Contract v2.0.2](https://github.com/ONDC-Official/ONDC-RET-Specifications/tree/release-2.0.2) <br/><br/> [Retail Developer Guide](https://ondc-official.github.io/ONDC-RET-Specifications/) - `select version: release-2.0.2`|[B2B Test Case Scenarios](https://docs.google.com/document/d/10ouiTKLY4dm1KnXCuhFwK38cYd9_aDQ30bklkqnPRkM/edit)|NA|[Sandbox](https://mock.ondc.org/)|NA|
+
   
 - Logistics - This domain streamlines the acquisition of on-network logistics services, providing logistics buyers with a variety of choices for flexible solutions that suit their specific needs.
 
