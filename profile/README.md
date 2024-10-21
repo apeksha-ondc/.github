@@ -72,13 +72,14 @@ _Below are links to the **comprehensive developer guide and model implementation
 - ### Retail (RET)
   This domain encompasses subcategories such as **grocery (RET10), food and beverages (RET11), fashion (RET12), electronics (RET14), home & decor (RET15), beauty and personal care (RET13)**, etc. It facilitates seamless transactions in both **B2C** and **B2B** modes, offering a comprehensive shopping experience for consumers and businesses alike.
 
-- #### B2C
+   - #### B2C
 
 |**Domain**|**API Contract/ Developer Guide**|**Test Scenarios**|**Log Utility**|**Mock Server/ Sandbox/ Reference Application**|**FAQs**|
 |---------------------|---------------------------------|------------------|------------------------|----------|------|
 |**B2C Retail**|[API Contract v1.2.0](https://docs.google.com/document/d/1brvcltG_DagZ3kGr1ZZQk4hG4tze3zvcxmGV4NMTzr8/edit) <br/><br/> [Retail Developer Guide](https://ondc-official.github.io/ONDC-RET-Specifications/) - `select version: draft-1.x`|[B2C Test Scenarios](https://docs.google.com/spreadsheets/d/1JZV6ZQzXcHUsOwegGtArX3DdIXYIy3gxkhQ00q7kICc/edit#gid=1367601795)|[Log Validation Utility](https://github.com/ONDC-Official/log-validation-utility) <br/><br/> [Manual Logs Checklist](https://docs.google.com/document/d/1ROAGXqj5cJkgsNWvg_xiufglhqEQDJFBgQSPcFZMZd4/edit)|Reference Buyer Application (Pre-Prod) <br/><br/> Reference Seller App (Pre-Prod)|[B2C Retail FAQs](https://docs.google.com/document/d/1Zb2XzrAUGGdthFqV5tRWxIzQf8XjaW22ev_lqfr3PbI/edit#heading=h.iz6kq888kevy)|
 |**B2C Exports**|[Retail Developer Guide](https://ondc-official.github.io/ONDC-RET-Specifications/) - `select version: b2c_exports_2.0`|NA|NA|[Sandbox](https://mock.ondc.org/)|NA|
 
+-
    - #### B2B
 
 |**Domain**|**API Contract/ Developer Guide**|**Test Scenarios**|**Log Utility**|**Mock Server/ Reference Application**|**FAQs**|
@@ -86,15 +87,15 @@ _Below are links to the **comprehensive developer guide and model implementation
 |**B2B Retail**|[API Contract v2.0.2](https://github.com/ONDC-Official/ONDC-RET-Specifications/tree/release-2.0.2) <br/><br/> [Retail Developer Guide](https://ondc-official.github.io/ONDC-RET-Specifications/) - `select version: release-2.0.2`|[B2B Test Case Scenarios](https://docs.google.com/document/d/10ouiTKLY4dm1KnXCuhFwK38cYd9_aDQ30bklkqnPRkM/edit)|NA|[Sandbox](https://mock.ondc.org/)|NA|
 
   
-- Logistics - This domain streamlines the acquisition of on-network logistics services, providing logistics buyers with a variety of choices for flexible solutions that suit their specific needs.
+- ### Logistics
+  This domain streamlines the **acquisition of on-network logistics** services, providing logistics buyers with a variety of choices for flexible solutions that suit their specific needs.
 
-  - [B2C Logistics v1.2](https://docs.google.com/document/d/1CkfxtqyLbSQccJZyNmf9BSGzJBH13gcLOk_tywV-LBk/edit)
-  - [B2B Logistics v2.0](https://github.com/ONDC-Official/ONDC-LOG-Specifications)
-  - [Logistics Developer Guide](https://ondc-official.github.io/ONDC-LOG-Specifications/)
-       - `For B2B Logistics, select version : draft-2.x`
-  - [Test Case Scenarios - B2C Logistics](https://docs.google.com/spreadsheets/d/1JZV6ZQzXcHUsOwegGtArX3DdIXYIy3gxkhQ00q7kICc/edit#gid=1670900093)
-     - <code>Run the transaction logs for these scenarios through the [log validation utility](https://github.com/ONDC-Official/log-validation-utility) to ensure accuracy before submission to the ONDC team for technical clearance.</code> 
-  - [Commonly asked questions](https://docs.google.com/document/d/17gCkt9gpnm8jA71gwEwtPPnvBo6szGeFyruvOaueL3c/edit) <sub>_(Not found the question you were looking for? Leave a comment in the document & we will revert)_</sub>
+|**Domain**|**API Contract/ Developer Guide**|**Test Scenarios**|**Log Utility**|**Mock Server/ Sandbox/ Reference Application**|**FAQs**|
+|---------------------|---------------------------------|------------------|------------------------|----------|------|
+|**B2C Logistics**|[B2C Logistics v1.2](https://docs.google.com/document/d/1CkfxtqyLbSQccJZyNmf9BSGzJBH13gcLOk_tywV-LBk/edit)|[Test Case Scenarios - B2C Logistics](https://docs.google.com/spreadsheets/d/1JZV6ZQzXcHUsOwegGtArX3DdIXYIy3gxkhQ00q7kICc/edit#gid=1670900093)|[Log Validation Utility](https://github.com/ONDC-Official/log-validation-utility)|Reference Buyer Application (Pre-Prod) <br/><br/> Reference Seller App (Pre-Prod)|[B2C Logistics FAQs](https://docs.google.com/document/d/17gCkt9gpnm8jA71gwEwtPPnvBo6szGeFyruvOaueL3c/edit)|
+|**B2B Logistics**|[B2B Logistics v2.0](https://github.com/ONDC-Official/ONDC-LOG-Specifications) <br/><br/> [Logistics Developer Guide](https://ondc-official.github.io/ONDC-LOG-Specifications/) - `select version: draft-2.x`|NA|NA|NA|NA|
+  
+
 - Financial Services - This domain facilitates easy access to a spectrum of financial solutions, covering loans, insurance, investments. 
 
   - [Financial Services Developer Guide](https://ondc-official.github.io/ONDC-FIS-Specifications/)
