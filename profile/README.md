@@ -63,6 +63,7 @@ The complete process is documented [here](https://github.com/ONDC-Official/devel
 > [!TIP]
 > <code>**Stuck somewhere?** _Refer [these](https://docs.google.com/document/d/15Dpy02lqtcU9tslyMqaI4UtnD2rtwnjAbn1narO0364/edit?usp=sharing) frequently asked questions and answers!_</code>
 
+
 ### Enabled Domains
 
 Network Participants are requested to refer to the list **[here](https://docs.google.com/spreadsheets/d/10yM4DtZ5cOgRf0uT2KMN6Ucd9IU_YZ__JatYYXtjc1k/edit#gid=1951317229)** for ONDC defined domains and respective codes, across all environments (Staging, Pre-production and Production). The list will be updated as in when required.
@@ -76,15 +77,17 @@ _Below are links to the **comprehensive developer guide and model implementation
 
 |**Domain**|**API Contract/ Developer Guide**|**Test Scenarios**|**Log Utility**|**Mock Server/ Sandbox/ Reference Application**|**FAQs**|
 |---------------------|---------------------------------|------------------|------------------------|----------|------|
-|**B2C Retail**|[API Contract v1.2.0](https://docs.google.com/document/d/1brvcltG_DagZ3kGr1ZZQk4hG4tze3zvcxmGV4NMTzr8/edit) <br/><br/> [Retail Developer Guide](https://ondc-official.github.io/ONDC-RET-Specifications/) - `select version: draft-1.x`|[B2C Test Scenarios](https://docs.google.com/spreadsheets/d/1JZV6ZQzXcHUsOwegGtArX3DdIXYIy3gxkhQ00q7kICc/edit#gid=1367601795)|[Log Validation Utility](https://github.com/ONDC-Official/log-validation-utility) <br/><br/> [Manual Logs Checklist](https://docs.google.com/document/d/1ROAGXqj5cJkgsNWvg_xiufglhqEQDJFBgQSPcFZMZd4/edit)|Reference Buyer Application (Pre-Prod) <br/><br/> Reference Seller App (Pre-Prod)|[B2C Retail FAQs](https://docs.google.com/document/d/1Zb2XzrAUGGdthFqV5tRWxIzQf8XjaW22ev_lqfr3PbI/edit#heading=h.iz6kq888kevy)|
-|**B2C Exports**|[Retail Developer Guide](https://ondc-official.github.io/ONDC-RET-Specifications/) - `select version: b2c_exports_2.0`|NA|NA|[Sandbox](https://mock.ondc.org/)|NA|
+|**B2C Retail**|[API Contract v1.2.0](https://docs.google.com/document/d/1brvcltG_DagZ3kGr1ZZQk4hG4tze3zvcxmGV4NMTzr8/edit) <br/><br/> [Retail Developer Guide](https://ondc-official.github.io/ONDC-RET-Specifications/) - `select version: draft-1.x` <br/><br/> [Taxonomy](https://drive.google.com/drive/folders/1ZdhZh7wzl4C2452zMYh7wlAvCH-x1b2R)|[B2C Test Scenarios](https://docs.google.com/spreadsheets/d/1JZV6ZQzXcHUsOwegGtArX3DdIXYIy3gxkhQ00q7kICc/edit#gid=1367601795)|[Log Validation Utility](https://github.com/ONDC-Official/log-validation-utility) <br/><br/> [Manual Logs Checklist](https://docs.google.com/document/d/1ROAGXqj5cJkgsNWvg_xiufglhqEQDJFBgQSPcFZMZd4/edit)|**Pre-Prod** Reference Buyer Application - [Github](https://github.com/ONDC-Official/ondc-sdk) & [App Link](https://buyer-app-preprod-v2.ondc.org/login) <br/><br/> **Pre-Prod** Reference Seller Application - [Github](https://github.com/ONDC-Official/seller-app-sdk/tree/master) & [App Link](https://seller-app-preprod-v2.ondc.org/sign-up) <br/><br/> Click [here](#reference-applications) for Staging links|[B2C Retail FAQs](https://docs.google.com/document/d/1Zb2XzrAUGGdthFqV5tRWxIzQf8XjaW22ev_lqfr3PbI/edit#heading=h.iz6kq888kevy)|
+|**B2C Exports**|[Retail Developer Guide](https://ondc-official.github.io/ONDC-RET-Specifications/) - `select version: b2c_exports_2.0` <br/><br/> [Taxonomy](https://drive.google.com/drive/folders/1ZdhZh7wzl4C2452zMYh7wlAvCH-x1b2R)|NA|NA|[Sandbox](https://mock.ondc.org/)|NA|
+
+It is important to implement **Catalog & Store Rejection Framework** for the **Retail B2C** domain. The documentation is [here](#catalog-and-store-rejection).
 
 -
    - #### B2B
 
 |**Domain**|**API Contract/ Developer Guide**|**Test Scenarios**|**Log Utility**|**Mock Server/ Reference Application**|**FAQs**|
 |---------------------|---------------------------------|------------------|------------------------|----------|------|
-|**B2B Retail**|[API Contract v2.0.2](https://github.com/ONDC-Official/ONDC-RET-Specifications/tree/release-2.0.2) <br/><br/> [Retail Developer Guide](https://ondc-official.github.io/ONDC-RET-Specifications/) - `select version: release-2.0.2`|[B2B Test Case Scenarios](https://docs.google.com/document/d/10ouiTKLY4dm1KnXCuhFwK38cYd9_aDQ30bklkqnPRkM/edit)|NA|[Sandbox](https://mock.ondc.org/)|NA|
+|**B2B Retail**|[API Contract v2.0.2](https://github.com/ONDC-Official/ONDC-RET-Specifications/tree/release-2.0.2) <br/><br/> [Retail Developer Guide](https://ondc-official.github.io/ONDC-RET-Specifications/) - `select version: release-2.0.2` <br/><br/> [Taxonomy](https://drive.google.com/drive/folders/1ZdhZh7wzl4C2452zMYh7wlAvCH-x1b2R)|[B2B Test Case Scenarios](https://docs.google.com/document/d/10ouiTKLY4dm1KnXCuhFwK38cYd9_aDQ30bklkqnPRkM/edit)|[B2B/Logistics Log Verification](https://github.com/ONDC-Official/reference-implementations/tree/main/utilities/logistics-b2b/log-verification-utility)|[Sandbox](https://mock.ondc.org/)|NA|
 
   
 - ### Logistics
@@ -92,12 +95,13 @@ _Below are links to the **comprehensive developer guide and model implementation
 
 |**Domain**|**API Contract/ Developer Guide**|**Test Scenarios**|**Log Utility**|**Mock Server/ Sandbox/ Reference Application**|**FAQs**|
 |---------------------|---------------------------------|------------------|------------------------|----------|------|
-|**B2C Logistics**|[B2C Logistics v1.2](https://docs.google.com/document/d/1CkfxtqyLbSQccJZyNmf9BSGzJBH13gcLOk_tywV-LBk/edit)|[Test Case Scenarios - B2C Logistics](https://docs.google.com/spreadsheets/d/1JZV6ZQzXcHUsOwegGtArX3DdIXYIy3gxkhQ00q7kICc/edit#gid=1670900093)|[Log Validation Utility](https://github.com/ONDC-Official/log-validation-utility)|Reference Buyer Application (Pre-Prod) <br/><br/> Reference Seller App (Pre-Prod)|[B2C Logistics FAQs](https://docs.google.com/document/d/17gCkt9gpnm8jA71gwEwtPPnvBo6szGeFyruvOaueL3c/edit)|
-|**B2B Logistics**|[B2B Logistics v2.0](https://github.com/ONDC-Official/ONDC-LOG-Specifications) <br/><br/> [Logistics Developer Guide](https://ondc-official.github.io/ONDC-LOG-Specifications/) - `select version: draft-2.x`|NA|NA|NA|NA|
+|**B2C Logistics**|[B2C Logistics v1.2](https://docs.google.com/document/d/1CkfxtqyLbSQccJZyNmf9BSGzJBH13gcLOk_tywV-LBk/edit)|[Test Case Scenarios - B2C Logistics](https://docs.google.com/spreadsheets/d/1JZV6ZQzXcHUsOwegGtArX3DdIXYIy3gxkhQ00q7kICc/edit#gid=1670900093)|[Log Validation Utility](https://github.com/ONDC-Official/log-validation-utility)|**Pre-Prod** Reference **LSP** Application - [Github](https://github.com/ONDC-Official/ref-logistics-app-sdk/tree/main) & [App Link](https://ref-logistics-app-preprod.ondc.org/) <br/><br/> Click [here](#reference-applications) for Staging links|[B2C Logistics FAQs](https://docs.google.com/document/d/17gCkt9gpnm8jA71gwEwtPPnvBo6szGeFyruvOaueL3c/edit)|
+|**B2B Logistics**|[B2B Logistics v2.0](https://github.com/ONDC-Official/ONDC-LOG-Specifications) <br/><br/> [Logistics Developer Guide](https://ondc-official.github.io/ONDC-LOG-Specifications/) - `select version: draft-2.x`|NA|[B2B/Logistics Log Verification](https://github.com/ONDC-Official/reference-implementations/tree/main/utilities/logistics-b2b/log-verification-utility)|[Sandbox](https://mock.ondc.org/)|NA|
   
-
-- Financial Services - This domain facilitates easy access to a spectrum of financial solutions, covering loans, insurance, investments. 
-
+- ### Financial Services (FIS)
+  This domain facilitates easy access to a spectrum of financial solutions, covering loans, insurance, investments.
+  
+  - [PRD](https://drive.google.com/drive/folders/14eHd-AQm-lkyBoh6JZDk1kCuVQxvTMFE)
   - [Financial Services Developer Guide](https://ondc-official.github.io/ONDC-FIS-Specifications/)
 
        - `For Personal Loan , select Version : release-FIS12-2.0.0`
@@ -109,8 +113,10 @@ _Below are links to the **comprehensive developer guide and model implementation
    - [Commonly asked questions](https://docs.google.com/document/d/1JH9zAK5S3po6GRv6BCdOddxYN6AzjgO57YQE8pVn6lQ/edit) <sub>_(Not found the question you were looking for? Leave a comment in the document & we will revert)_</sub>
   - [Gift Card](https://docs.google.com/document/d/1iTCQd_jI3mRqgSiaeZBvxWL-G_wkE__xxW-Wua8arVE/edit)
 
-- Travel & Tourism - This domain enables easy access to a range of travel-related services, covering On-demand Ride hailing with various transport modes, ticket booking without designated seat, airlines, hotels, intercity bus, entry ticket pass, etc.
+- ### Travel & Tourism/ Mobility (TRV)
+  This domain enables easy access to a range of travel-related services, covering On-demand Ride hailing with various transport modes, ticket booking without designated seat, airlines, hotels, intercity bus, entry ticket pass, etc.
 
+  - [PRD](https://drive.google.com/drive/folders/14eHd-AQm-lkyBoh6JZDk1kCuVQxvTMFE)
   - [Mobility Specifications Developer Guide](https://ondc-official.github.io/mobility-specification/)
 
       - `For On-demand Ride hailing, select version : release-TRV10-2.0.1`
@@ -121,8 +127,11 @@ _Below are links to the **comprehensive developer guide and model implementation
       - `For Unreserved Entry Pass (heritage sights, museums, concerts, etc), select version : draft-TRV14-2.0.0`
 
    - [Commonly asked questions](https://docs.google.com/document/d/138tJ_zzt5yIi46b3WsY2UeBU1rJeGXZTG4ivheT87CM/edit) <sub>_(Not found the question you were looking for? Leave a comment in the document & we will revert)_</sub>
-- Services -  This domain empowers individuals to effortlessly access a diverse array of services, covering skilled services like home painting, chefs and consulations, auction of agricultural outputs, leasing farming machinery and tools, soil testing, assaying services, lab testing, subscriptions, etc.
 
+- ### Services (SRV)
+  This domain empowers individuals to effortlessly access a diverse array of services, covering skilled services like **home painting, chefs and consulations, auction of agricultural outputs, leasing farming machinery and tools, soil testing, assaying services, lab testing, subscriptions**, etc.
+
+  - [PRD](https://drive.google.com/drive/folders/14eHd-AQm-lkyBoh6JZDk1kCuVQxvTMFE)
   - [v2.0.0](https://github.com/ONDC-Official/ONDC-SRV-Specifications)
   - [Services Developer Guide](https://ondc-official.github.io/ONDC-SRV-Specifications/#)
 
@@ -131,20 +140,23 @@ _Below are links to the **comprehensive developer guide and model implementation
       - `For Equipment hiring (leasing farming machinery and tools), select version : draft-agri_equipment`
       - `For Soil Testing and Assaying Service, select version : draft-agri_services`
       - `For Healthcare Services (Lab Test Booking), select version : draft-healthcare`
+   - [Sandbox](https://mock.ondc.org/)
    - [Commonly asked questions](https://docs.google.com/document/d/1e_nGOnYb4ld1kxjhOHOsXXOms96aDd6txD8Wh2wl6tk/edit) <sub>_(Not found the question you were looking for? Leave a comment in the document & we will revert)_</sub>
-- Media, Entertainment, Content
+
+- ### Media, Entertainment, Content (MEC)
+  - [PRD](https://drive.google.com/drive/folders/14eHd-AQm-lkyBoh6JZDk1kCuVQxvTMFE)
   - [v2.0.0](https://github.com/ONDC-Official/ONDC-MEC-Specifications/tree/draft-print_media)
   - [Media, Entertainment, Content Developer Guide](https://ondc-official.github.io/ONDC-MEC-Specifications/)
 
-- Ancillary Services
-  - **Issue & Grievance Management (IGM)** within the ONDC Network serves as a critical mechanism for **resolving disputes and concerns** among Network Participants (NPs).
-  - **Reconcillation and Settlement Framework (RSF)** plays a pivotal role in maintaining a comprehensive **trail of settlements** between Network Participants.
+- ### Ancilliary Services
+  - **Issue & Grievance Management (IGM)** within the ONDC Network serves as a critical mechanism for resolving disputes and concerns among Network Participants (NPs).
+  - **Reconcillation and Settlement Framework (RSF)** plays a pivotal role in maintaining a comprehensive trail of settlements between Network Participants.
   - **Rating**
   - **Score**
     
 |**Domain**|**API Contract/ Developer Guide**|**Test Scenarios**|**Log Utility/ Sandbox**|**Mock Server/ Reference Application**|**FAQs**|
 |---------------------|---------------------------------|------------------|------------------------|----------|------|
-|**IGM**|[v1.0.0](https://docs.google.com/document/d/1ZUS5hvS2M-TafyjAdcTY6X51VKbb9IO1fPaSquQfA0Y/edit)|[Test Case Scenarios (IGM)](https://docs.google.com/document/d/1tx86sypacIRXgL9nlNBdvHz7cYQjQoyC/edit)|[Log validation utility](https://github.com/ONDC-Official/log-validation-utility)|NA|[IGM FAQs](https://docs.google.com/document/d/1-NULesI1Z6GQ9y4Z0loGEG5yfunX5u9woON-qxYH6w0/edit)|
+|**IGM**|[v1.0.0](https://docs.google.com/document/d/1ZUS5hvS2M-TafyjAdcTY6X51VKbb9IO1fPaSquQfA0Y/edit)|[Test Case Scenarios (IGM)](https://docs.google.com/document/d/1tx86sypacIRXgL9nlNBdvHz7cYQjQoyC/edit)|[IGM Log Verification](https://github.com/ONDC-Official/log-validation-utility)|NA|[IGM FAQs](https://docs.google.com/document/d/1-NULesI1Z6GQ9y4Z0loGEG5yfunX5u9woON-qxYH6w0/edit)|
 |**RSF**|[v1.0.0](https://docs.google.com/document/d/1ubUPAWpbbUJ4vG2h5TQ74srZBjYjrO0P/edit)|[Test Case Scenarios (RSF)](https://docs.google.com/document/d/1tx86sypacIRXgL9nlNBdvHz7cYQjQoyC/edit)|NA|[RSF Mock Server](https://github.com/ONDC-Official/mock-server-utility)|[RSF FAQs](https://docs.google.com/document/d/19TCvuwwvOklt9Ev-SKkcXRAdvh6Qyhl9tI1Z_YavHMk/edit)|
 |**Rating**|[v1.2.0](https://docs.google.com/document/d/1VaafY8t47hjpoW6tdezGsPwLwxxaAaGc/edit)|NA|NA|NA|NA|
 |**Score**|[v1.2.0](https://docs.google.com/document/d/126O1wFdA-IuwojiAuLzdpN36vjWfQg9KOA2zRd9-zTY/edit#heading=h.bifjra7hj5b0)|NA|NA|NA|NA|
@@ -180,11 +192,7 @@ The network participants need to complete the end-to-end testing with ONDC refer
   - [GoLang](https://github.com/ONDC-Official/reference-implementations/tree/main/utilities/signing_and_verification/golang)
   - [PHP](https://github.com/ONDC-Official/reference-implementations/tree/main/utilities/signing_and_verification/php)
 - [Subscription process](https://github.com/ONDC-Official/reference-implementations/tree/main/utilities/on_subscibe-service) : This tool aids ONDC Network Participants during the subscription process for the registry (Staging, Pre Prod, Prod). It includes the implementation of the /on_subscribe API in both NodeJS and Python.
-- [Retail/IGM Log Verification](https://github.com/ONDC-Official/log-validation-utility) : This tool is designed for ONDC Network Participants to verify their transaction logs related to the Retail and IGM use cases on their end, ensuring accuracy before submission to the ONDC team for technical clearance.
-- [B2B/Logistics Log Verification](https://github.com/ONDC-Official/reference-implementations/tree/main/utilities/logistics-b2b/log-verification-utility) : This tool is designed for ONDC Network Participants to verify their transaction logs related to the B2B and Logistics use cases on their end, ensuring accuracy before submission to the ONDC team for technical clearance.
 - [vlookup](https://www.npmjs.com/package/vlookup-ondc) : This tool is developed to perform a registry lookup and retrieve details related to Network Participants (NP).
-- [RSF Mock Server](https://github.com/ONDC-Official/mock-server-utility) : The RSF Mock Server is a tool specifically designed to test network integration for Reconcillation and Settlement Framework (RSF) , based on ONDC model implementation.
-- [Sandbox](https://mock.ondc.org/) : This sandbox specifically designed to test network integration for various domains - B2B Retail, Services, B2C Exports, B2B Logistics based on ONDC model implementations.
 
 ## Taxonomies
 
